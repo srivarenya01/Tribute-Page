@@ -1,0 +1,189 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    height: inherit;
+    font-weight: 540;
+    text-align: center;
+    font-family: sans-serif;
+    cursor: context-menu;
+}
+
+h2{
+    color: blue;
+    font-size: 50px;
+}
+
+h3{
+    color: blue;
+    margin: 15px 0px;
+    font-size: 35px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+img{
+    margin-bottom: 20px;
+}
+
+p:hover{
+    color: green;
+}
+
+img:hover{
+    box-shadow: -5px -5px 10px 10px rgb(99, 99, 124);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: darkred;
+}
+
+
+
+.bef{
+    margin: 250px;
+    font-size: 200px;
+    color: red;
+}
+
+.start{
+    display: none;
+}
+
+
+/* Header */
+.navbar{
+    background-color: #3100a36d;
+    margin: 4% 10%;
+    border-radius: 40px;
+    height: 100px;
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    width: 80%;
+}
+
+/* Information */
+.info{
+    margin: 2% 10%;
+    text-align: left;
+}
+
+.img1{
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.6);
+}
+
+.info_data{
+    height: 50%;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+/* Business areas */
+.business{
+    margin: 2% 10%;
+    padding: 0 20px;
+    text-align: left;
+    line-height: 2;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.activities{
+    margin: 2% 10%;
+    text-align: left;
+    line-height: 2;
+}
+
+.slider_spacex,.slider_neuralink,.slider_hyperloop,.slider_openAI{
+    float: right;
+    margin-left: 30px;
+}
+.slider_tesla,.slider_boring,.slider_solar{
+    float: left;
+    margin-right: 30px;
+}
+.slide{
+    width: 35% !important;
+}
+.slider,.slide{
+    width: 40%;
+    display: flex;
+    aspect-ratio: 15/10;
+    border-radius: 0.5rem;
+}
+
+.end{
+    padding: 35px 0px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.links div a{
+    margin: 10px 50px;
+    color: greenyellow;
+}
+.links div a:hover{
+    color: darkred;
+}
+
+/* Making responsive */
+@media(max-width:900px){
+    .navbar{
+        height: 80px;
+        font-size: 22px;
+        margin: 2% 5%;
+        width: 90%;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img1{
+        height: 300px;
+        width: auto;
+        margin: auto;
+        float: none;
+    }
+
+    .slider_spacex,.slider_neuralink,.slider_hyperloop,.slider_openAI,.slider_tesla,.slider_boring,.slider_solar{
+        float: none;
+        margin: auto;
+    }
+    .slide{
+        width: 90% !important;
+    }
+    .slider,.slide{
+        width: 90%;
+    }
+}
